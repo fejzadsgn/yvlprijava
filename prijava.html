@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join us | YVL</title>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: 'Unbounded', sans-serif;
+      background-color: #0d0d0d;
+      color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    form {
+      background-color: #1a1a1a;
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+    }
+    h1 {
+      color: rgb(255, 122, 122);
+      margin-bottom: 1.5rem;
+      text-align: center;
+      font-size: 1.75rem;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 0.5rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #333;
+      color: #fff;
+      font-size: 1rem;
+    }
+    .checkbox-group {
+      margin-top: 0.5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 0.5rem;
+    }
+    .checkbox-group label {
+      font-weight: normal;
+      display: flex;
+      align-items: center;
+      background-color: #2a2a2a;
+      padding: 0.5rem 0.75rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .checkbox-group label:hover {
+      background-color: #3a3a3a;
+    }
+    .checkbox-group input[type="checkbox"] {
+      margin-right: 0.5rem;
+      accent-color: #f00;
+    }
+    button {
+      margin-top: 2rem;
+      width: 100%;
+      padding: 1rem;
+      background-color: rgb(255, 255, 255);
+      color: #8a2828;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: rgb(10, 10, 10);
+    }
+    .confirmation {
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    .logo {
+  height: 50px;
+  cursor: pointer;
+}
+
+  </style>
+</head>
+<body>
+  <form action="https://formspree.io/f/xrbklynw" method="POST">
+    <img src="https://i.ibb.co/PsBZbhTB/YVL-Logo-5.png" alt="YVL Logo" class="logo"/>
+
+    <input type="hidden" name="_subject" value="Nova prijava za YVL label!">
+
+    <label for="name"><i class="fas fa-user"></i> Ime i prezime</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="artist"><i class="fas fa-signature"></i> Umjetničko ime</label>
+    <input type="text" id="artist" name="artist" required>
+
+    <label for="datebirth"><i class="fas fa-signature"></i> Datum Rođenja (npr. 31.12.1999)</label>
+    <input type="text" id="datebirth" name="datebirth" required>
+
+    <label for="email"><i class="fas fa-envelope"></i> Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label><i class="fas fa-briefcase"></i> Čime se baviš?</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="role[]" value="Reper"><i class="fas fa-microphone"></i>&nbsp;Reper</label>
+      <label><input type="checkbox" name="role[]" value="Producent"><i class="fas fa-headphones"></i>&nbsp;Producent</label>
+      <label><input type="checkbox" name="role[]" value="Tekstopisac"><i class="fas fa-pen-nib"></i>&nbsp;Tekstopisac</label>
+      <label><input type="checkbox" name="role[]" value="Audio Inžinjer"><i class="fas fa-sliders-h"></i>&nbsp;Audio Inžinjer</label>
+      <label><input type="checkbox" name="role[]" value="GFX Dizajner"><i class="fas fa-paint-brush"></i>&nbsp;GFX Dizajner</label>
+      <label><input type="checkbox" name="role[]" value="VFX Editor"><i class="fas fa-video"></i>&nbsp;VFX Editor</label>
+    </div>
+
+    <label for="socials"><i class="fas fa-link"></i> Linkovi do društvenih mreža / platformi</label>
+    <textarea id="socials" name="socials" rows="3" required></textarea>
+
+    <label for="bio"><i class="fas fa-info-circle"></i> Kratka biografija / opis</label>
+    <textarea id="bio" name="bio" rows="4" required></textarea>
+
+    <label for="demo"><i class="fas fa-music"></i> Link do tvoje muzike / demoa</label>
+    <input type="url" id="demo" name="demo" required>
+
+    <button type="submit"><i class="fas fa-paper-plane"></i> Pošalji prijavu</button>
+    <p class="confirmation">Nakon slanja, dobićete potvrdu na email.</p>
+    <p class="confirmation">&copy; YVL 2025. Sva prava zadržana.</p>
+  </form>
+</body>
+
+</html>
